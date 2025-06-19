@@ -1,0 +1,12 @@
+.LogoLink {
+  display: inline-block;
+  width: clamp(40px, 5.52vw, 79.5px);
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+.Logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

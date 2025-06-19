@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export const Logo = () => {
    return (
-      <Link to="/" className={styles.Logo}>
-         <img src={logoUrl} alt="Logo" />
+      <Link to="/" className={styles.LogoLink}>
+         <img src={logoUrl} className={styles.Logo} alt="Logo" />
       </Link>
    );
 };

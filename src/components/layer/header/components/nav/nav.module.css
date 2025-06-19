@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  gap: 2.5vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--black-third);
+  font-weight: regular;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--blue);
+}

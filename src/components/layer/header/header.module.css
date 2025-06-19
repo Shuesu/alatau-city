@@ -1,0 +1,15 @@
+.headerContainer {
+  margin: 0 calc(-50vw + 50%);
+  border: 1px solid var(--grey-dark);
+}
+
+.header {
+  max-width: 84.72vw;
+  margin: 0 auto;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+  height: auto;
+}

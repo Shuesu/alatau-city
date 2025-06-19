@@ -1,12 +1,12 @@
+import { Header } from './components/layer';
 import './App.css'
 
 function App() {
-
   return (
     <div className="AppContainer">
-      ss
+      <Header />
     </div>
   )
 }
 
-export default App
+export default App;
