@@ -1,0 +1,34 @@
+.headerControl {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.button:hover {
+  border-color: var(--blue);
+}
+
+.icon {
+  fill: var(--grey-dark);
+  transition: fill 0.2s ease;
+  width: 21px;
+  height: 21px;
+}
+
+.button:hover .icon {
+  fill: var(--blue);
+}
