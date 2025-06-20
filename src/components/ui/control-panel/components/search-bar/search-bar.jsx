@@ -1,11 +1,19 @@
-import { SearchIcon } from '../icons/search-icon';
-import { XMarkIcon } from '../../../../../assets/icons'
+// search-bar.jsx
+import { SearchIcon, XMarkIcon } from '../../../../../assets/icons';
 import styles from './search-bar.module.css';
 
-export const SearchBar = () => {
+export const SearchBar = ({ onSearchToggle, isSearchOpen }) => {
    return (
-      <button className={styles.button}>
-         <SearchIcon className={styles.icon} />
+      <button
+         className={styles.button}
+         onClick={onSearchToggle}
+         aria-label={isSearchOpen ? "Close search" : "Open search"}
+      >
+         {isSearchOpen ? (
+            <XMarkIcon className={styles.icon} />
+         ) : (
+            <SearchIcon className={styles.icon} />
+         )}
       </button>
-   )
-}
+   );
+};

@@ -1,11 +1,13 @@
-import { SearchBar, LanguageDropDown, FontSizeControl } from './components';
+import { SearchBar, FontSizeControl, LanguageDropDown } from './components';
 import styles from './control-panel.module.css';
 
-export const ControlPanel = () => {
-
+export const ControlPanel = ({ onSearchToggle, isSearchOpen }) => {
    return (
       <div className={styles.headerControl}>
-         <SearchBar />
+         <SearchBar
+            onSearchToggle={onSearchToggle}
+            isSearchOpen={isSearchOpen}
+         />
          <FontSizeControl />
          <LanguageDropDown />
       </div>

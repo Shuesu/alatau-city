@@ -4,27 +4,32 @@
 
 .list {
   display: flex;
-  gap: 2.5vw;
   list-style: none;
   margin: 0;
   padding: 0;
   align-items: center;
+  width: 100%; /* Добавляем полную ширину */
+  justify-content: space-between; /* Равномерное распределение */
 }
 
 .item {
   position: relative;
   text-align: center;
+  flex: 1; /* Каждый элемент занимает равное пространство */
+  max-width: max-content; /* Но не больше своего содержимого */
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   text-decoration: none;
   color: var(--black-third);
   font-weight: regular;
   transition: all 0.3s ease;
-  padding-left: 19px; /* Отступ для стрелки */
+  padding-left: 19px;
+  justify-content: center; /* Центрируем содержимое ссылки */
+  width: 100%; /* Занимаем всю доступную ширину */
 }
 
 .link:hover {

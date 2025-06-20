@@ -4,6 +4,7 @@
   min-width: 40px;
   height: auto;
   transition: opacity 0.3s;
+  margin-right: 20px;
 }
 
 .Logo {
