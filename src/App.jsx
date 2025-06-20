@@ -1,12 +1,12 @@
-import { Header } from './components/layer';
+import { Header, HeroSlider } from './components/layer';
 import './App.css'
 
 function App() {
   return (
     <div className="AppContainer">
       <Header />
-      <div style={{ width: '40px', height: '600px' }}>ddddddddddddddd</div>
-      <div style={{ width: '40px', height: '600px' }}>ddddddddddddddd</div>
+      <HeroSlider />
+      <div style={{ height: '300px' }}></div>
     </div >
   )
 }
