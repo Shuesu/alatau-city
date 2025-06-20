@@ -1,6 +1,7 @@
 .LogoLink {
   display: inline-block;
   width: clamp(40px, 5.52vw, 79.5px);
+  min-width: 40px;
   height: auto;
   transition: opacity 0.3s;
 }

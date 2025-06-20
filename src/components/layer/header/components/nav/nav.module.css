@@ -8,15 +8,52 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  text-align: center;
 }
 
 .link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
   color: var(--black-third);
   font-weight: regular;
-  transition: color 0.2s ease;
+  transition: all 0.3s ease;
+  padding-left: 19px; /* Отступ для стрелки */
 }
 
 .link:hover {
   color: var(--blue);
+  transform: translateX(8px); /* Сдвиг вправо при наведении */
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: var(--blue);
+}
+
+.link:hover .icon {
+  opacity: 1;
+}
+
+.linkText {
+  transition: transform 0.3s ease;
+}
+
+/* Уменьшаем размер SVG иконки */
+.icon svg {
+  width: 100%;
+  height: 100%;
 }

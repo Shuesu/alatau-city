@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowDownIcon } from '../icons/arrow-down-icon';
+import { ArrowDownIcon } from '../../../../../assets/icons/arrow-down-icon';
 import styles from './language-dropdown.module.css'
 
 export const LanguageDropDown = () => {
