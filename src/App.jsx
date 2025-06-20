@@ -1,4 +1,4 @@
-import { Header, HeroSlider } from './components/layer';
+import { Header, HeroSlider, InteractiveMap } from './components/layer';
 import './App.css'
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div className="AppContainer">
       <Header />
       <HeroSlider />
+      <InteractiveMap />
       <div style={{ height: '300px' }}></div>
     </div >
   )

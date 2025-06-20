@@ -8,33 +8,28 @@ export const Header = () => {
    const [isFontSizeActive, setIsFontSizeActive] = useState(false);
 
    return (
-      <>
-         {/* {isFontSizeActive && (
+      <div className={styles.headerContainer}>
+         {isFontSizeActive && (
             <FontSizeBanner />
-         )} */}
-         <div className={styles.headerContainer}>
-            {isFontSizeActive && (
-               <FontSizeBanner />
-            )}
-            <header className={styles.header}>
-               <Logo />
-               <div className={isSearchOpen ? styles.searchReplacement : styles.navContainer}>
-                  {isSearchOpen ? (
-                     <SearchReplacement />
-                  ) : (
-                     <Nav />
-                  )}
-               </div>
+         )}
+         <header className={styles.header}>
+            <Logo />
+            <div className={isSearchOpen ? styles.searchReplacement : styles.navContainer}>
+               {isSearchOpen ? (
+                  <SearchReplacement />
+               ) : (
+                  <Nav />
+               )}
+            </div>
 
-               <ControlPanel
-                  onSearchToggle={() => setIsSearchOpen(!isSearchOpen)}
-                  isSearchOpen={isSearchOpen}
-                  onFontSizeToggle={() => setIsFontSizeActive(!isFontSizeActive)}
-                  isFontSizeActive={isFontSizeActive}
-               />
-               <Button>Связаться с нами</Button>
-            </header>
-         </div>
-      </>
+            <ControlPanel
+               onSearchToggle={() => setIsSearchOpen(!isSearchOpen)}
+               isSearchOpen={isSearchOpen}
+               onFontSizeToggle={() => setIsFontSizeActive(!isFontSizeActive)}
+               isFontSizeActive={isFontSizeActive}
+            />
+            <Button>Связаться с нами</Button>
+         </header>
+      </div>
    );
 };

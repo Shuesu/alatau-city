@@ -1,0 +1,19 @@
+.interactiveMapContainer {
+  background-color: var(--white);
+  border-radius: 50px;
+  border: 1px solid var(--grey);
+  margin: 0 calc(-50vw + 53%);
+  margin-top: -2.5vw;
+  background-image: url("../../../../../../public/images/map-bg.png");
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.interactiveMap {
+  max-width: 84.72vw;
+  margin: 0 auto;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+}

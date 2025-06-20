@@ -1,0 +1,82 @@
+.accordionSection {
+  flex: 1;
+  padding: 40px;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textContent {
+  margin-bottom: 40px;
+  color: var(--black-second);
+}
+
+.accordions {
+  width: 100%;
+}
+
+.accordion {
+  margin-bottom: 15px;
+  border: 1px solid var(--grey);
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.accordionTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--black-third);
+}
+
+.accordionIcon {
+  transition: transform 0.3s ease;
+  width: 16px;
+  height: 16px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.accordionBody {
+  padding: 20px;
+}
+
+/* Добавьте эти стили в ваш accordion-section.module.css */
+
+.accordionIconShape {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.greenIcon {
+  color: var(--green);
+}
+
+.orangeIcon {
+  color: var(--orange);
+}
+
+.yellowIcon {
+  color: var(--yellow);
+}
+
+.blueIcon {
+  color: var(--blue);
+}

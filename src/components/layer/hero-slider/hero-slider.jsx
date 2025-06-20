@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Button } from '../../ui'
+import { useState, useEffect, useCallback } from 'react';
+import { Button } from '../../ui';
 import { ArrowDownIcon } from '../../../assets/icons';
 import heroSliderBg from '../../../../public/images/hero-slider-bg.jpg';
 import PartnerBg from '../../../../public/images/partner-bg.jpg';
@@ -13,20 +13,18 @@ export const HeroSlider = () => {
 
    const [currentSlide, setCurrentSlide] = useState(0);
 
-   useEffect(() => {
-      const interval = setInterval(() => {
-         goToNext();
-      }, 5000);
-      return () => clearInterval(interval);
-   }, [currentSlide]);
-
-   const goToPrev = () => {
-      setCurrentSlide(prev => (prev === 0 ? slides.length - 1 : prev - 1));
-   };
-
-   const goToNext = () => {
+   const goToNext = useCallback(() => {
       setCurrentSlide(prev => (prev === slides.length - 1 ? 0 : prev + 1));
-   };
+   }, [slides.length]);
+
+   const goToPrev = useCallback(() => {
+      setCurrentSlide(prev => (prev === 0 ? slides.length - 1 : prev - 1));
+   }, [slides.length]);
+
+   useEffect(() => {
+      const interval = setInterval(goToNext, 5000);
+      return () => clearInterval(interval);
+   }, [goToNext]); // Зависимость только от goToNext
 
    return (
       <div
@@ -58,6 +56,5 @@ export const HeroSlider = () => {
             </div>
          </div>
       </div>
-
    );
 };

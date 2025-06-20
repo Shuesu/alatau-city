@@ -21,6 +21,7 @@
   line-height: 1; /* Убираем влияние line-height */
   color: var(--grey-dark);
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .fontletter:hover {
