@@ -1,36 +1,13 @@
-import { useState } from 'react';
 import { ArrowDownIcon, RectangleIcon, CircleIcon, HexIcon, TriangleIcon } from '../../../../../assets/icons';
 import styles from './accordion-section.module.css';
 
-export const AccordionSection = () => {
-   const [activeAccordion, setActiveAccordion] = useState(null);
-
-   const toggleAccordion = (index) => {
-      setActiveAccordion(activeAccordion === index ? null : index);
+export const AccordionSection = ({ districts, activeDistrict, onDistrictClick }) => {
+   const icons = {
+      green: <CircleIcon className={`${styles.accordionIconShape} ${styles.greenIcon}`} />,
+      orange: <RectangleIcon className={`${styles.accordionIconShape} ${styles.orangeIcon}`} />,
+      yellow: <HexIcon className={`${styles.accordionIconShape} ${styles.yellowIcon}`} />,
+      blue: <TriangleIcon className={`${styles.accordionIconShape} ${styles.blueIcon}`} />
    };
-
-   const accordions = [
-      {
-         title: "Green District",
-         content: "Крупнейший финансовый, деловой, культурный и архитектурный центр мирового уровня. Деловой центр включает в себя многофункциональные комплексы, объединяющие все необходимое для бизнеса, отдыха и развлечений.",
-         icon: <CircleIcon className={`${styles.accordionIconShape} ${styles.greenIcon}`} />
-      },
-      {
-         title: "Growing District",
-         content: "Content for accordion 2",
-         icon: <RectangleIcon className={`${styles.accordionIconShape} ${styles.orangeIcon}`} />
-      },
-      {
-         title: "Golden District",
-         content: "Content for accordion 3",
-         icon: <HexIcon className={`${styles.accordionIconShape} ${styles.yellowIcon}`} />
-      },
-      {
-         title: "Gate District",
-         content: "Content for accordion 4",
-         icon: <TriangleIcon className={`${styles.accordionIconShape} ${styles.blueIcon}`} />
-      },
-   ];
 
    return (
       <div className={styles.accordionSection}>
@@ -42,21 +19,21 @@ export const AccordionSection = () => {
          </div>
 
          <div className={styles.accordions}>
-            {accordions.map((accordion, index) => (
+            {districts.map((district, index) => (
                <div key={index} className={styles.accordion}>
                   <button
                      className={styles.accordionHeader}
-                     onClick={() => toggleAccordion(index)}
+                     onClick={() => onDistrictClick(district.id)}
                   >
                      <span className={styles.accordionTitle}>
-                        {accordion.icon}
-                        {accordion.title}
+                        {icons[district.id]}
+                        {district.title}
                      </span>
-                     <ArrowDownIcon className={`${styles.accordionIcon} ${activeAccordion === index ? styles.rotate : ''}`} />
+                     <ArrowDownIcon className={`${styles.accordionIcon} ${activeDistrict === district.id ? styles.rotate : ''}`} />
                   </button>
-                  {activeAccordion === index && (
+                  {activeDistrict === district.id && (
                      <div className={styles.accordionBody}>
-                        {accordion.content}
+                        {district.content}
                      </div>
                   )}
                </div>
