@@ -1,0 +1,44 @@
+.fontSizeBanner {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--black-second);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 60vw;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--grey-dark);
+}
+
+.fontletter {
+  border-radius: 50%;
+  display: inline-flex; /* или inline-block */
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Фиксированная ширина */
+  height: 40px; /* Фиксированная высота, равная ширине */
+  text-align: center;
+  line-height: 1; /* Убираем влияние line-height */
+  color: var(--grey-dark);
+  margin-left: 10px;
+}
+
+.fontletter:hover {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.fontletterFirst {
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+}
+
+.fontletterSecond {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+}
+
+.fontletterThird {
+  font-size: var(--font-size-base2);
+  font-weight: 700;
+}

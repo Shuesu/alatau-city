@@ -1,39 +1,40 @@
-import { Logo, Nav } from './components';
-import { ControlPanel } from '../../ui';
-import { Button } from '../../ui/button/button';
-import styles from './header.module.css';
 import { useState } from 'react';
-import { SearchIcon } from '../../../assets/icons/search-icon';
+import { Logo, Nav } from './components';
+import { Button, ControlPanel, FontSizeBanner, SearchReplacement } from '../../ui';
+import styles from './header.module.css';
 
 export const Header = () => {
    const [isSearchOpen, setIsSearchOpen] = useState(false);
+   const [isFontSizeActive, setIsFontSizeActive] = useState(false);
 
    return (
-      <div className={styles.headerContainer}>
-         <header className={styles.header}>
-            <Logo />
-            <div className={isSearchOpen ? styles.searchReplacement : styles.navContainer}>
-               {isSearchOpen ? (
-                  <>
-                     <input
-                        type="text"
-                        placeholder="Поиск..."
-                        className={styles.searchInput}
-                        autoFocus
-                     />
-                     <SearchIcon className={styles.searchIcon} />
-                  </>
-               ) : (
-                  <Nav />
-               )}
-            </div>
+      <>
+         {/* {isFontSizeActive && (
+            <FontSizeBanner />
+         )} */}
+         <div className={styles.headerContainer}>
+            {isFontSizeActive && (
+               <FontSizeBanner />
+            )}
+            <header className={styles.header}>
+               <Logo />
+               <div className={isSearchOpen ? styles.searchReplacement : styles.navContainer}>
+                  {isSearchOpen ? (
+                     <SearchReplacement />
+                  ) : (
+                     <Nav />
+                  )}
+               </div>
 
-            <ControlPanel
-               onSearchToggle={() => setIsSearchOpen(!isSearchOpen)}
-               isSearchOpen={isSearchOpen}
-            />
-            <Button>Связаться с нами</Button>
-         </header>
-      </div>
+               <ControlPanel
+                  onSearchToggle={() => setIsSearchOpen(!isSearchOpen)}
+                  isSearchOpen={isSearchOpen}
+                  onFontSizeToggle={() => setIsFontSizeActive(!isFontSizeActive)}
+                  isFontSizeActive={isFontSizeActive}
+               />
+               <Button>Связаться с нами</Button>
+            </header>
+         </div>
+      </>
    );
 };

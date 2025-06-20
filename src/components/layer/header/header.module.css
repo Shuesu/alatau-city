@@ -1,7 +1,11 @@
 /* header.module.css */
 .headerContainer {
   margin: 0 calc(-50vw + 50%);
-  border: 1px solid var(--grey-dark);
+  border: 2px solid var(--grey-dark);
+  border-top: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header {
@@ -10,7 +14,7 @@
   min-width: 320px;
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 15px 0;
   justify-content: space-between;
   height: auto;
 }
@@ -34,27 +38,4 @@
     width: 50vw;
     max-width: none;
   }
-}
-
-.searchInput {
-  width: 100%;
-  padding: 10px 40px 10px 15px;
-  border: 1px solid var(--grey-dark);
-  border-radius: 20px;
-  box-sizing: border-box;
-}
-
-.searchInput:focus {
-  border-color: var(--blue);
-  outline: none;
-}
-
-.searchIcon {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  color: var(--grey-dark);
 }

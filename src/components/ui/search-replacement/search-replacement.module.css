@@ -1,0 +1,22 @@
+.searchInput {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid var(--grey-dark);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.searchInput:focus {
+  border-color: var(--blue);
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--grey-dark);
+}
