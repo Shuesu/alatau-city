@@ -12,8 +12,6 @@ export const Header = () => {
       <div className={styles.headerContainer}>
          <header className={styles.header}>
             <Logo />
-
-            {/* Общая обертка для обоих состояний */}
             <div className={isSearchOpen ? styles.searchReplacement : styles.navContainer}>
                {isSearchOpen ? (
                   <>

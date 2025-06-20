@@ -17,12 +17,12 @@
 }
 
 .icon {
-  fill: var(--grey-dark);
+  color: var(--grey-dark);
   transition: fill 0.2s ease;
   width: 21px;
   height: 21px;
 }
 
 .button:hover .icon {
-  fill: var(--blue);
+  color: var(--blue);
 }
