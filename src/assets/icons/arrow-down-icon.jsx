@@ -9,7 +9,7 @@ export const ArrowDownIcon = ({ className = '' }) => (
    >
       <path
          d="M13.9999 15.8666L19.7746 10.0919L21.4245 11.7418L13.9999 19.1665L6.57532 11.7418L8.22523 10.0919L13.9999 15.8666Z"
-         fill="currentColor" // Используем currentColor для управления цветом через CSS
+         fill="currentColor"
       />
    </svg>
 );

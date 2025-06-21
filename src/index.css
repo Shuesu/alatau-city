@@ -19,6 +19,21 @@
   --font-size-mega: 6.67vw; /*96*/
 }
 
+@media (max-width: 1920px) {
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}
+
 *,
 *::before,
 *::after {

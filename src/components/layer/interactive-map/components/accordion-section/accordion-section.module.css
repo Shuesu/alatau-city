@@ -1,14 +1,18 @@
 .accordionSection {
   flex: 1;
-  padding: 40px;
-  padding-top: 90px;
+  padding: 2.5rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
 }
 
 .textContent {
-  margin-bottom: 40px;
+  margin-bottom: 3rem;
   color: var(--black-second);
+}
+
+.titleFirst {
+  margin-bottom: 1.5rem;
 }
 
 .accordions {
@@ -16,7 +20,7 @@
 }
 
 .accordion {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   border: 1px solid var(--grey);
   border-radius: 13px;
   overflow: hidden;
@@ -77,4 +81,53 @@
 
 .blueIcon {
   color: var(--blue);
+}
+
+@media (max-width: 1440px) {
+  .accordionSection {
+    padding: 2.5rem;
+    padding-top: 3rem;
+  }
+  .textContent {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .textContent {
+    font-size: var(--font-size-lg);
+  }
+
+  .accordionTitle {
+    gap: 10px;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+  }
+
+  .accordionBody {
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordionSection {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+
+  .textContent {
+    font-size: var(--font-size-xl);
+  }
+
+  .accordionTitle {
+    font-size: var(--font-size-xl);
+  }
+
+  .accordionBody {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (max-width: 480px) {
 }

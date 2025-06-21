@@ -44,7 +44,7 @@
 }
 
 .infoMain:hover .infoMainBg {
-  transform: scale(1.05); /* Увеличение фона */
+  transform: scale(1.05);
 }
 
 .cardsColumn {

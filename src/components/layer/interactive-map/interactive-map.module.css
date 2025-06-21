@@ -13,7 +13,13 @@
 .interactiveMap {
   max-width: 84.72vw;
   margin: 0 auto;
-  min-width: 320px;
+  min-width: 20rem;
   width: 100%;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .interactiveMap {
+    display: block;
+  }
 }

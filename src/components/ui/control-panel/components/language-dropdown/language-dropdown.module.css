@@ -5,11 +5,11 @@
 .languageButton {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   color: var(--grey-dark);
   transition: all 0.2s ease;
 }
@@ -24,8 +24,8 @@
 
 .arrow {
   transition: transform 0.3s ease;
-  width: 21px;
-  height: 21px;
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
 .arrow.rotated {
@@ -48,7 +48,7 @@
 .languageOption {
   display: block;
   width: 100%;
-  padding: 8px 13px;
+  padding: 0.5rem 0.8rem;
   background: none;
   border: none;
   text-align: left;
