@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 1rem;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .infoMainBg {

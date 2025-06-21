@@ -3,20 +3,7 @@
   border-radius: 50px;
   border: 1px solid var(--grey);
   margin: 0 calc(-50vw + 53%);
-  padding: 40px 0;
-}
-
-@media (min-width: 768px) {
-  .newsSectionContainer {
-    padding: 40px 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .newsSectionContainer {
-    padding-top: 70px;
-    padding-bottom: 110px;
-  }
+  padding: 5rem 0;
 }
 
 .newsSection {
@@ -40,7 +27,7 @@
   padding: 25px;
   border: 1px solid var(--grey);
   border-radius: 20px;
-  transition: all 2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .newsDate {
@@ -84,7 +71,7 @@
   width: 100%;
   height: 100%;
   color: var(--white);
-  transition: all 2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .newsMain:hover .newsHide,
@@ -126,7 +113,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  height: 50vh;
   min-height: 400px;
 }
 
