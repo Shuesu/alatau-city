@@ -8,14 +8,14 @@
 
 @media (min-width: 768px) {
   .newsSectionContainer {
-    padding: 40px 0; /* Для планшетов и выше */
+    padding: 40px 0;
   }
 }
 
 @media (min-width: 1200px) {
   .newsSectionContainer {
     padding-top: 70px;
-    padding-bottom: 110px; /* Для больших экранов */
+    padding-bottom: 110px;
   }
 }
 
@@ -122,13 +122,12 @@
   transform: rotate(45deg);
 }
 
-/* Основные изменения начинаются здесь */
 .newsContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  height: 50vh; /* Было 70vh — уменьшили высоту */
-  min-height: 400px; /* Было 600px — можно уменьшить */
+  height: 50vh;
+  min-height: 400px;
 }
 
 .newsMain {
@@ -147,7 +146,6 @@
   height: 100%;
 }
 
-/* Остальные стили для newsMain */
 .newsImage {
   width: 100%;
   height: 100%;

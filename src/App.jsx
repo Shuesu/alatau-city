@@ -1,4 +1,4 @@
-import { Header, HeroSlider, InteractiveMap, NewsSection } from './components/layer';
+import { Header, HeroSlider, InteractiveMap, NewsSection, InfoCardSection } from './components/layer';
 import './App.css'
 
 function App() {
@@ -7,8 +7,8 @@ function App() {
       <Header />
       <HeroSlider />
       <InteractiveMap />
+      <InfoCardSection />
       <NewsSection />
-      <div style={{ height: '300px' }}></div>
     </div >
   )
 }
