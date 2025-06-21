@@ -21,7 +21,6 @@
   z-index: 1;
 }
 
-/* Затемняющий слой */
 .partnerSection::before {
   content: "";
   position: absolute;
@@ -30,14 +29,14 @@
   right: 0;
   bottom: 0;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.2); /* Затемнение 50% */
+  background: rgba(0, 0, 0, 0.2);
   z-index: 0;
 }
 
 .title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Лёгкая тень для текста */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .info {

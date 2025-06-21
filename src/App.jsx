@@ -1,4 +1,4 @@
-import { Header, HeroSlider, InteractiveMap, NewsSection, InfoCardSection, PartnersSection } from './components/layer';
+import { Header, HeroSlider, InteractiveMap, NewsSection, InfoCardSection, PartnersSection, Footer } from './components/layer';
 import './App.css'
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <InfoCardSection />
       <NewsSection />
       <PartnersSection />
+      <Footer />
     </div >
   )
 }

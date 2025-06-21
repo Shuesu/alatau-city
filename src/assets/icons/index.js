@@ -15,3 +15,9 @@ export * from './blue-map'
 export * from './pulse-icon'
 export * from './arrow-icon'
 
+export * from './youtube'
+export * from './linkedin'
+export * from './instagram'
+export * from './facebook'
+export * from './telegram'
+

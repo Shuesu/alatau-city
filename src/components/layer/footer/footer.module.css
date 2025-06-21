@@ -1,0 +1,114 @@
+.footer {
+  padding: 40px 0;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.largeColumn {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.title {
+  color: #000;
+  font-size: var(--font-size-base2);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.link {
+  color: #666;
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  margin-bottom: 10px;
+}
+
+.link:hover {
+  color: var(--black);
+}
+
+.text {
+  color: var(--grey);
+  font-size: var(--font-size-sm);
+  padding-bottom: 10px;
+}
+
+.subscribe {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  font-size: var(--font-size-sm);
+}
+
+.input:hover {
+  border: 1px solid var(--blue);
+}
+
+.socialText {
+  color: #666;
+  font-size: var(--font-size-sm);
+  margin-top: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  color: var(--grey);
+}
+
+.socialLink:hover .facebook {
+  color: #1877f2;
+}
+
+.socialLink:hover .instagram {
+  color: #e4405f;
+}
+
+.socialLink:hover .youtube {
+  color: #cd201f;
+}
+
+.socialLink:hover .linkedin {
+  color: #0a66c2;
+}
+
+.socialLink:hover .telegram {
+  color: #0088cc;
+}
+
+.bottom {
+  display: flex;
+  gap: 1rem;
+  color: var(--grey);
+  font-size: var(--font-size-sm);
+}
+
+.dev:hover {
+  color: var(--blue);
+}
