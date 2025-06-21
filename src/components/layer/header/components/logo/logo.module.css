@@ -1,10 +1,10 @@
 .LogoLink {
   display: inline-block;
-  width: clamp(40px, 5.52vw, 79.5px);
-  min-width: 40px;
+  width: clamp(2.5rem, 5.52vw, 5rem);
+  min-width: 2.5rem;
   height: auto;
   transition: opacity 0.3s;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .Logo {

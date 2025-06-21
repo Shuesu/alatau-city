@@ -8,15 +8,15 @@
   margin: 0;
   padding: 0;
   align-items: center;
-  width: 100%; /* Добавляем полную ширину */
-  justify-content: space-between; /* Равномерное распределение */
+  width: 100%;
+  justify-content: space-between;
 }
 
 .item {
   position: relative;
   text-align: center;
-  flex: 1; /* Каждый элемент занимает равное пространство */
-  max-width: max-content; /* Но не больше своего содержимого */
+  flex: 1;
+  max-width: max-content;
 }
 
 .link {
@@ -28,13 +28,13 @@
   font-weight: regular;
   transition: all 0.3s ease;
   padding-left: 19px;
-  justify-content: center; /* Центрируем содержимое ссылки */
-  width: 100%; /* Занимаем всю доступную ширину */
+  justify-content: center;
+  width: 100%;
 }
 
 .link:hover {
   color: var(--blue);
-  transform: translateX(8px); /* Сдвиг вправо при наведении */
+  transform: translateX(8px);
 }
 
 .icon {
@@ -57,7 +57,6 @@
   transition: transform 0.3s ease;
 }
 
-/* Уменьшаем размер SVG иконки */
 .icon svg {
   width: 100%;
   height: 100%;

@@ -1,6 +1,6 @@
 .searchInput {
   width: 100%;
-  padding: 10px 40px 10px 15px;
+  padding: 0.6rem 2.5rem 0.6rem 1rem;
   border: 1px solid var(--grey-dark);
   border-radius: 20px;
   box-sizing: border-box;

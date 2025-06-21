@@ -1,38 +1,38 @@
 .footer {
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 
 .container {
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .column {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .largeColumn {
   flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 0.8rem;
 }
 
 .title {
   color: #000;
   font-size: var(--font-size-base2);
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .link {
   color: #666;
   text-decoration: none;
   font-size: var(--font-size-sm);
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
 }
 
 .link:hover {
@@ -42,19 +42,19 @@
 .text {
   color: var(--grey);
   font-size: var(--font-size-sm);
-  padding-bottom: 10px;
+  padding-bottom: 0.7rem;
 }
 
 .subscribe {
   display: flex;
-  gap: 10px;
+  gap: 0.7rem;
 }
 
 .input {
   flex: 1;
-  padding: 10px 15px;
+  padding: 0.7rem 1rem;
   border: 1px solid var(--grey);
-  border-radius: 10px;
+  border-radius: 0.7rem;
   font-size: var(--font-size-sm);
 }
 
@@ -63,15 +63,15 @@
 }
 
 .socialText {
-  color: #666;
+  color: var(--grey);
   font-size: var(--font-size-sm);
-  margin-top: 10px;
+  margin-top: 0.7rem;
 }
 
 .socialIcons {
   display: flex;
-  gap: 15px;
-  margin-top: 10px;
+  gap: 1rem;
+  margin-top: 0.7rem;
 }
 
 .socialLink {
