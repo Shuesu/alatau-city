@@ -13,4 +13,5 @@ export * from './yellow-map'
 export * from './blue-map'
 
 export * from './pulse-icon'
+export * from './arrow-icon'
 

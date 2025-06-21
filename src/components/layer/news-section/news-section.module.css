@@ -1,0 +1,173 @@
+.newsSectionContainer {
+  background-color: var(--white);
+  border-radius: 50px;
+  border: 1px solid var(--grey);
+  margin: 0 calc(-50vw + 53%);
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .newsSectionContainer {
+    padding: 40px 0; /* Для планшетов и выше */
+  }
+}
+
+@media (min-width: 1200px) {
+  .newsSectionContainer {
+    padding-top: 70px;
+    padding-bottom: 110px; /* Для больших экранов */
+  }
+}
+
+.newsSection {
+  max-width: 84.72vw;
+  margin: 0 auto;
+  min-width: 320px;
+  width: 100%;
+}
+
+.newsHat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.newsInfo {
+  position: relative;
+  margin-top: -20px;
+  background: var(--white);
+  padding: 25px;
+  border: 1px solid var(--grey);
+  border-radius: 20px;
+  transition: all 2s ease-out;
+}
+
+.newsDate {
+  font-size: var(--font-size-sm);
+  color: var(--grey-dark);
+  margin-bottom: 5px;
+}
+
+.newsTitle {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  width: 80%;
+}
+
+.newsHide {
+  display: none;
+  margin-top: 10px;
+  color: var(--grey);
+  font-weight: var(--font-size-sm);
+  font-weight: 300;
+  width: 90%;
+}
+
+.hidePart {
+  display: none;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  width: 44px;
+  height: 44px;
+  border: 0.5px solid var(--white);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.hideIcon {
+  padding: 4px;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  transition: all 2s ease-out;
+}
+
+.newsMain:hover .newsHide,
+.newsMain:hover .hidePart {
+  display: flex;
+}
+
+.newsMain:hover .newsInfo {
+  background-color: var(--blue);
+  border: none;
+}
+
+.newsLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+.newsLink:hover {
+  color: var(--blue);
+}
+
+.newsIcon {
+  width: 15px;
+  height: 15px;
+  transition: 0.2s ease-out;
+}
+
+.newsLink:hover .newsIcon {
+  transform: rotate(45deg);
+}
+
+/* Основные изменения начинаются здесь */
+.newsContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 50vh; /* Было 70vh — уменьшили высоту */
+  min-height: 400px; /* Было 600px — можно уменьшить */
+}
+
+.newsMain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.newsCards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  height: 100%;
+}
+
+/* Остальные стили для newsMain */
+.newsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+.newsCategory {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: var(--font-size-sm);
+  z-index: 2;
+}
+
+.newsHeading {
+  font-size: 18px;
+  margin: 0;
+}
