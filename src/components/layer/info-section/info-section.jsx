@@ -5,8 +5,12 @@ export const InfoCardSection = () => {
    return (
       <div className={styles.infoSection}>
          <div className={styles.infoMain}>
-            <div className={styles.infoMainBg}>Город инвестиционных возможностей</div>
+            <div className={styles.infoMainBg} />
+            <div className={styles.infoMainText}>
+               Город инвестиционных возможностей
+            </div>
          </div>
+
          <div className={styles.cardsColumn}>
             <InfoCard
                title="Специальная индустриальная зона ALATAU"
