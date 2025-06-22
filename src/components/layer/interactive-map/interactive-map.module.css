@@ -39,3 +39,10 @@
     margin-top: -9vw;
   }
 }
+
+@media (max-width: 480px) {
+  .interactiveMapContainer {
+    margin: 0 1rem;
+    margin-top: -13vw;
+  }
+}

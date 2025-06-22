@@ -137,7 +137,7 @@
     display: grid;
     justify-content: start;
     text-align: start;
-    gap: 3.5rem;
+    gap: 1.5rem;
     padding: 0 1rem;
   }
 
@@ -176,14 +176,14 @@
 
   .socialBar {
     justify-content: start;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   .bottom {
     font-size: 1.3rem;
     display: grid;
     justify-content: start;
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 
   .subscribe {

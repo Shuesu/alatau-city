@@ -10,7 +10,7 @@ function App() {
     <div className={`${styles.AppContainer} ${isBurgerOpen ? styles.appContainerGrey : ''}`}>
       <Header isBurgerOpen={isBurgerOpen} setIsBurgerOpen={setIsBurgerOpen} />
       <div className={isBurgerOpen ? styles.appContentHide : styles.upHide}>
-        <HeroSlider />s
+        <HeroSlider />
         <InteractiveMap />
         <InfoCardSection />
         <NewsSection />
