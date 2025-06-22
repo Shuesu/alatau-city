@@ -1,3 +1,7 @@
+.searchReplacement {
+  position: relative;
+}
+
 .searchInput {
   width: 100%;
   padding: 0.6rem 2.5rem 0.6rem 1rem;
@@ -19,4 +23,42 @@
   width: 1.1rem;
   height: 1.1rem;
   color: var(--grey-dark);
+}
+
+@media (max-width: 1024px) {
+  .searchInput {
+    background-color: var(--grey);
+    font-size: var(--font-size-md2);
+    padding: 0.8rem 2.7rem 0.8rem 1.2rem;
+  }
+
+  .searchReplacement {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .searchIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchInput {
+    background-color: var(--grey);
+    font-size: var(--font-size-lg);
+  }
+
+  .searchReplacement {
+    margin-bottom: 0.1rem;
+    margin-top: 0.3em;
+  }
+
+  .searchIcon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
 }

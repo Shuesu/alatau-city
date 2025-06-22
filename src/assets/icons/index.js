@@ -21,3 +21,5 @@ export * from './instagram'
 export * from './facebook'
 export * from './telegram'
 
+export * from './burger'
+

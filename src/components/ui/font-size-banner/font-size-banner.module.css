@@ -12,13 +12,13 @@
 
 .fontletter {
   border-radius: 50%;
-  display: inline-flex; /* или inline-block */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px; /* Фиксированная ширина */
-  height: 40px; /* Фиксированная высота, равная ширине */
+  width: 40px;
+  height: 40px;
   text-align: center;
-  line-height: 1; /* Убираем влияние line-height */
+  line-height: 1;
   color: var(--grey-dark);
   margin-left: 10px;
   cursor: pointer;
@@ -42,4 +42,60 @@
 .fontletterThird {
   font-size: var(--font-size-base2);
   font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .fontSizeBanner {
+    background-color: transparent;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .fontletterFirst {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .fontletterSecond {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .fontletterThird {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+  }
+
+  .fontletter {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fontSizeBanner {
+    background-color: transparent;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .fontletterFirst {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .fontletterSecond {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .fontletterThird {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+  }
+
+  .fontletter {
+    margin-left: 0.5rem;
+  }
 }

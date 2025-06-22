@@ -61,3 +61,34 @@
   background: #f5f5f5;
   color: var(--blue);
 }
+
+@media (max-width: 1920px) {
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+  .languageButton {
+    font-size: 1.1rem;
+  }
+
+  .arrow {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .languageDropdown {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .languageButton {
+    font-size: 0.9rem;
+  }
+}

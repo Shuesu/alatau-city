@@ -27,12 +27,18 @@
 
 @media (max-width: 1024px) {
   .LogoLink {
-    width: 5rem;
+    width: 7rem;
   }
 }
 
 @media (max-width: 768px) {
+  .LogoLink {
+    width: 6rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .LogoLink {
+    width: 4.5rem;
+  }
 }

@@ -3,7 +3,7 @@ import { SearchIcon } from '../../../assets/icons';
 
 export const SearchReplacement = () => {
    return (
-      <>
+      <div className={styles.searchReplacement}>
          <input
             type="text"
             placeholder="Поиск..."
@@ -11,6 +11,6 @@ export const SearchReplacement = () => {
             autoFocus
          />
          <SearchIcon className={styles.searchIcon} />
-      </>
+      </div>
    );
 }
