@@ -224,3 +224,50 @@
     padding: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .newsContent {
+    display: block;
+  }
+
+  .newsSection {
+    margin-top: 4rem;
+  }
+
+  .uplink {
+    display: none;
+  }
+
+  .hidelink {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .newsMain {
+    margin-bottom: 2rem;
+  }
+
+  .newsTitleUp {
+    text-align: center;
+  }
+
+  .newsTitle {
+    font-size: 1rem;
+  }
+
+  .newsDate {
+    font-size: 1rem;
+  }
+
+  .newsCategory {
+    font-size: 1rem;
+  }
+
+  .newsSectionContainer {
+    background-color: var(--white);
+    border-radius: 50px;
+    border: 1px solid var(--grey);
+    margin: 0 auto;
+    padding: 0;
+  }
+}

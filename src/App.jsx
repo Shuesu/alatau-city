@@ -11,7 +11,7 @@ function App() {
       <Header isBurgerOpen={isBurgerOpen} setIsBurgerOpen={setIsBurgerOpen} />
       <div className={isBurgerOpen ? styles.appContentHide : styles.upHide}>
         <HeroSlider />
-        <InteractiveMap />
+        {/* <InteractiveMap /> */}
         <InfoCardSection />
         <NewsSection />
         <PartnersSection />

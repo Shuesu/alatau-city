@@ -155,12 +155,16 @@
 
 @media (max-width: 480px) {
   .accordionSection {
-    padding: 1rem;
+    padding: 0.2rem;
     padding-top: 3rem;
   }
 
+  .accordionHeader {
+    padding: 0.2rem;
+  }
+
   .textContent {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
 
   .accordionTitle {

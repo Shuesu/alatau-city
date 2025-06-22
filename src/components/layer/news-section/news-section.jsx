@@ -40,7 +40,7 @@ export const NewsSection = () => {
       <div className={styles.newsSectionContainer}>
          <div className={styles.newsSection}>
             <div className={styles.newsHat}>
-               <div className={styles.newsTitle}>
+               <div className={`${styles.newsTitle} ${styles.newsTitleUp}`}>
                   Новости и события города
                </div>
                <div className={`${styles.newsLink} ${styles.uplink}`}>

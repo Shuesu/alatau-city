@@ -215,7 +215,8 @@
 
 @media (max-width: 480px) {
   .mapSection {
-    max-width: 100%;
+    max-width: 70%;
+    padding: 0;
   }
 
   .pulseIcon {

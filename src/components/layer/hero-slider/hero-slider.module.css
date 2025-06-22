@@ -206,27 +206,38 @@
 }
 
 @media (max-width: 480px) {
-  .controlButton {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .title {
-    font-size: 2rem;
+  .heroContainer {
+    margin: 0 1rem;
+    height: 40rem;
   }
 
   .heroSlider {
-    padding: 0 2rem;
-    padding-top: 26rem;
+    display: block;
+  }
+
+  .controlButton {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .heroSlider {
+    padding: 0 0.5rem;
+    padding-top: 21rem;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
   }
 
   .button {
     font-size: 0.8rem;
-    padding: 1rem 2rem;
+    padding: 0.9rem 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .slideContent {
