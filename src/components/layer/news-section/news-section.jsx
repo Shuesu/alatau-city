@@ -9,21 +9,21 @@ export const NewsSection = () => {
          id: 1,
          title: "Загаловок главной новости о новом городе Алатау",
          date: "12.04.2025",
-         image: "../../../../public/images/partner-bg.jpg",
+         image: `${import.meta.env.BASE_URL}images/partner-bg.jpg`,
          category: "Интервью"
       },
       {
          id: 2,
          title: "Загаловок главной новости о новом городе Алатау",
          date: "12.04.2025",
-         image: "../../../../public/images/partner-bg.jpg",
+         image: `${import.meta.env.BASE_URL}images/partner-bg.jpg`,
          category: "Новости"
       },
       {
          id: 3,
          title: "Загаловок главной новости о новом городе Алатау",
          date: "12.04.2025",
-         image: "../../../../public/images/news1.jpg",
+         image: `${import.meta.env.BASE_URL}images/news1.jpg`,
          category: "События"
       }
    ];
@@ -31,7 +31,7 @@ export const NewsSection = () => {
    const mainNews = {
       title: "Заголовок главной новости о городе Алатау не больше 80 символов",
       date: "12.04.2025",
-      image: "../../../../public/images/partner-bg.jpg",
+      image: `${import.meta.env.BASE_URL}images/partner-bg.jpg`,
       category: "Новости",
       hide: "Лид главной новости: краткий анонс содержания материала в одно-два тезисных предложения"
    };
