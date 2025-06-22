@@ -31,11 +31,11 @@ export const Footer = () => {
                      placeholder="Email"
                      className={styles.input}
                   />
-                  <Button>Отправить</Button>
+                  <Button className={styles.button}>Отправить</Button>
                </div>
 
                <p className={styles.socialText}>Следите за нами в соцсетях:</p>
-               <SocialBar />
+               <SocialBar className={styles.socialBar} />
             </div>
          </div>
          <div className={styles.bottom}>

@@ -78,3 +78,149 @@
 .dev:hover {
   color: var(--blue);
 }
+
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: var(--font-size-xl);
+  }
+
+  .link {
+    font-size: var(--font-size-lg);
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .text {
+    font-size: var(--font-size-lg);
+  }
+
+  .input {
+    font-size: var(--font-size-lg);
+  }
+
+  .button {
+    font-size: var(--font-size-lg);
+  }
+
+  .socialText {
+    font-size: var(--font-size-lg);
+  }
+
+  .socialBar svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .socialBar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .bottom {
+    font-size: var(--font-size-lg);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    justify-content: start;
+    text-align: start;
+    gap: 3.5rem;
+    padding: 0 4rem;
+  }
+
+  .largeColumn {
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+  }
+
+  .socialText {
+    font-size: 1.5rem;
+  }
+
+  .socialBar {
+    justify-content: start;
+    margin-bottom: 2rem;
+  }
+
+  .bottom {
+    font-size: 1.5rem;
+    display: grid;
+    justify-content: start;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .subscribe {
+    display: grid;
+  }
+
+  .link {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .text {
+    font-size: 1.3rem;
+  }
+
+  .input {
+    font-size: 1.3rem;
+  }
+
+  .button {
+    font-size: 1.3rem;
+  }
+
+  .socialText {
+    font-size: 1.3rem;
+  }
+
+  .bottom {
+    font-size: 1.1rem;
+  }
+}
