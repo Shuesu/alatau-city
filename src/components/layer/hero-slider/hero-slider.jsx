@@ -24,7 +24,7 @@ export const HeroSlider = () => {
    useEffect(() => {
       const interval = setInterval(goToNext, 5000);
       return () => clearInterval(interval);
-   }, [goToNext]); // Зависимость только от goToNext
+   }, [goToNext]);
 
    return (
       <div

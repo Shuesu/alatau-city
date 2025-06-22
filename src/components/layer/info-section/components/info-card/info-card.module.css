@@ -54,7 +54,34 @@
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
 }

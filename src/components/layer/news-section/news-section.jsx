@@ -43,7 +43,7 @@ export const NewsSection = () => {
                <div className={styles.newsTitle}>
                   Новости и события города
                </div>
-               <div className={styles.newsLink}>
+               <div className={`${styles.newsLink} ${styles.uplink}`}>
                   Все новости <ArrowIcon className={styles.newsIcon} />
                </div>
             </div>
@@ -70,6 +70,9 @@ export const NewsSection = () => {
                         category={news.category}
                      />
                   ))}
+               </div>
+               <div className={`${styles.newsLink} ${styles.hidelink}`}>
+                  Все новости <ArrowIcon className={styles.newsIcon} />
                </div>
             </div>
          </div>

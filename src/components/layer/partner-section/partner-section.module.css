@@ -50,3 +50,49 @@
 .button {
   padding: 1rem 3rem;
 }
+
+@media (max-width: 1024px) {
+  .partnerSection {
+    margin: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .info {
+    font-size: 1.3rem;
+  }
+
+  .button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .partnerSection {
+    margin: 1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .info {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}

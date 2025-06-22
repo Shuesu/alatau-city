@@ -49,8 +49,8 @@
 
 .accordionIcon {
   transition: transform 0.3s ease;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
 }
 
 .rotate {
@@ -88,24 +88,48 @@
     padding: 2.5rem;
     padding-top: 3rem;
   }
+
   .textContent {
     margin-bottom: 2rem;
+  }
+
+  .textContent {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .accordionTitle {
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .accordionBody {
+    font-size: 1.3rem;
+    font-weight: 300;
   }
 }
 
 @media (max-width: 1024px) {
   .textContent {
-    font-size: var(--font-size-lg);
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .accordionIcon {
+    transition: transform 0.3s ease;
+    width: 2rem;
+    height: 2rem;
   }
 
   .accordionTitle {
-    gap: 10px;
-    font-size: var(--font-size-lg);
+    gap: 0.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
   }
 
   .accordionBody {
-    font-size: var(--font-size-lg);
+    font-size: 1.3rem;
     font-weight: 300;
   }
 }
@@ -117,17 +141,33 @@
   }
 
   .textContent {
-    font-size: var(--font-size-xl);
+    font-size: 1.3rem;
   }
 
   .accordionTitle {
-    font-size: var(--font-size-xl);
+    font-size: 1.3rem;
   }
 
   .accordionBody {
-    font-size: var(--font-size-xl);
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 480px) {
+  .accordionSection {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+
+  .textContent {
+    font-size: 1.1rem;
+  }
+
+  .accordionTitle {
+    font-size: 1.1rem;
+  }
+
+  .accordionBody {
+    font-size: 1.1rem;
+  }
 }
