@@ -1,0 +1,33 @@
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.7rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  color: var(--grey);
+}
+
+.socialLink:hover .facebook {
+  color: #1877f2;
+}
+
+.socialLink:hover .instagram {
+  color: #e4405f;
+}
+
+.socialLink:hover .youtube {
+  color: #cd201f;
+}
+
+.socialLink:hover .linkedin {
+  color: #0a66c2;
+}
+
+.socialLink:hover .telegram {
+  color: #0088cc;
+}

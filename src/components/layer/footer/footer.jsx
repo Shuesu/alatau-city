@@ -1,5 +1,4 @@
-import { Button } from '../../ui'
-import { Youtube, Linkedin, Instagram, Facebook, Telegram } from '../../../assets/icons'
+import { Button, SocialBar } from '../../ui'
 import styles from './footer.module.css'
 
 export const Footer = () => {
@@ -36,13 +35,7 @@ export const Footer = () => {
                </div>
 
                <p className={styles.socialText}>Следите за нами в соцсетях:</p>
-               <div className={styles.socialIcons}>
-                  <a href="#" className={styles.socialLink}><Facebook className={styles.facebook} /></a>
-                  <a href="#" className={styles.socialLink}><Instagram className={styles.instagram} /></a>
-                  <a href="#" className={styles.socialLink}><Youtube className={styles.youtube} /></a>
-                  <a href="#" className={styles.socialLink}><Linkedin className={styles.linkedin} /></a>
-                  <a href="#" className={styles.socialLink}><Telegram className={styles.telegram} /></a>
-               </div>
+               <SocialBar />
             </div>
          </div>
          <div className={styles.bottom}>
