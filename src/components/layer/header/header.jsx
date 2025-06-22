@@ -5,10 +5,12 @@ import { Button, ControlPanel, FontSizeBanner, SearchReplacement } from '../../u
 
 import styles from './header.module.css';
 
-export const Header = () => {
+export const Header = ({
+   isBurgerOpen,
+   setIsBurgerOpen
+}) => {
    const [isSearchOpen, setIsSearchOpen] = useState(false);
    const [isFontSizeActive, setIsFontSizeActive] = useState(false);
-   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
    const [isAccordionOpen, setIsAccordionOpen] = useState(false);
 
    const handleFontSizeToggle = () => {

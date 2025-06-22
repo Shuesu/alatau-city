@@ -1,16 +1,22 @@
 import { Header, HeroSlider, InteractiveMap, NewsSection, InfoCardSection, PartnersSection, Footer } from './components/layer';
-import './App.css'
+import { useState } from 'react';
+import styles from './App.module.css'
 
 function App() {
+
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
   return (
-    <div className="AppContainer">
-      <Header />
-      <HeroSlider />
-      <InteractiveMap />
-      <InfoCardSection />
-      <NewsSection />
-      <PartnersSection />
-      <Footer />
+    <div className={`${styles.AppContainer} ${isBurgerOpen ? styles.appContainerGrey : ''}`}>
+      <Header isBurgerOpen={isBurgerOpen} setIsBurgerOpen={setIsBurgerOpen} />
+      <div className={isBurgerOpen ? styles.appContentHide : styles.upHide}>
+        <HeroSlider />s
+        <InteractiveMap />
+        <InfoCardSection />
+        <NewsSection />
+        <PartnersSection />
+        <Footer />
+      </div>
     </div >
   )
 }

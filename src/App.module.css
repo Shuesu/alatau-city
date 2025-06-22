@@ -4,6 +4,15 @@
   min-width: 320px;
 }
 
+.appContentHide {
+  display: none;
+}
+
+.appContainerGrey {
+  background-color: var(--grey);
+  min-height: 100vh;
+}
+
 @media (max-width: 1920px) {
 }
 
